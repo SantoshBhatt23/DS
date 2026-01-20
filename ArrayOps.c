@@ -40,11 +40,11 @@ int main() {
         printf("15. Exit\n");
         printf("Enter choice: ");
         scanf("%d", &choice);
+        int arrarChoice;
 
         switch (choice) {
         case 1:
             printf("Select Array:\n 1.Main \n2.Subarray1 \n3.SubArray2\n");
-            int arrayChoice;
             scanf("%d",&arrayChoice);
             printf("Enter value: ");
             scanf("%d", &value);
@@ -62,7 +62,6 @@ int main() {
 
         case 2:
             printf("Select Array:\n 1.Main \n2.Subarray1 \n3.SubArray2\n");
-            int arrayChoice;
             scanf("%d",&arrayChoice);
             printf("Enter value: ");
             scanf("%d", &value);
@@ -80,7 +79,6 @@ int main() {
 
         case 3:
            printf("Select Array:\n 1.Main \n2.Subarray1 \n3.SubArray2\n");
-            int arrayChoice;
             scanf("%d",&arrayChoice);
             printf("Enter value & position: ");
             scanf("%d %d", &value, &pos);
@@ -98,7 +96,6 @@ int main() {
 
         case 4:
             printf("Select Array:\n 1.Main \n2.Subarray1 \n3.SubArray2\n");
-            int arrayChoice;
             scanf("%d",&arrayChoice);
             if(arrayChoice==1){
                 deleteEnd(MainArray, &n3);
@@ -115,7 +112,6 @@ int main() {
 
         case 5:
             printf("Select Array:\n 1.Main \n2.Subarray1 \n3.SubArray2\n");
-            int arrayChoice;
             scanf("%d",&arrayChoice);
             if(arrayChoice==1){
                 deleteBeginning(MainArray, &n3);
@@ -131,7 +127,6 @@ int main() {
 
         case 6:
             printf("Select Array:\n 1.Main \n2.Subarray1 \n3.SubArray2\n");
-            int arrayChoice;
             scanf("%d",&arrayChoice);
             printf("Enter position: ");
             scanf("%d", &pos);
@@ -309,3 +304,4 @@ void copySubArray(int *MainArray,int*subArray,int*n){
     *n = 10;
 
 }
+
