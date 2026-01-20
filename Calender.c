@@ -31,7 +31,7 @@ int main(){
    int startDay = dayOfWeek(1,month,year);
 
    //printing calendar:
-   printf("---------%s %d-----------\n",months[i-1],year);
+   printf("---------%s %d-----------\n",months[month-1],year);
    printf("\nSun Mon Tue Wed Thu Fri Sat\n");
    for (int i = 0 ; i<startDay ; i++){
         printf("    ");
@@ -44,3 +44,4 @@ int main(){
     return 0;
 
 }
+
