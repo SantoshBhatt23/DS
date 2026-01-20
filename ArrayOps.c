@@ -135,8 +135,16 @@ int main() {
             scanf("%d",&arrayChoice);
             printf("Enter position: ");
             scanf("%d", &pos);
-            deletePosition(MainArray, &n3, pos);
-            display(MainArray, n3);
+            if(arrayChoice == 1){
+                deletePosition(MainArray, &n3, pos);
+                display(MainArray, n3);
+            }else if(arrayChoice ==2){
+                deletePosition(SubArray1, &n1, pos);
+                display(SubArray1, n1);
+            }else if(arrayChoice == 3){
+                deletePosition(SubArray2, &n2, pos);
+                display(SubArray2, n2);
+            }
             break;
 
         case 7:
@@ -299,4 +307,5 @@ void copySubArray(int *MainArray,int*subArray,int*n){
         MainArray[i] = subArray[i];
     }
     *n = 10;
+
 }
