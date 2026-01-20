@@ -23,13 +23,15 @@ int dayOfWeek(int d,int m,int y){
 
 int main(){
    int month ,year;
+   char *months[] = {"Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","November","December"};
    printf("enter month and year: ");
    scanf("%d %d",&month,&year);
-
+    
    int totalDays = daysInMonth(month,year);
    int startDay = dayOfWeek(1,month,year);
 
    //printing calendar:
+   printf("---------%s %d-----------\n",months[i-1],year);
    printf("\nSun Mon Tue Wed Thu Fri Sat\n");
    for (int i = 0 ; i<startDay ; i++){
         printf("    ");
@@ -40,4 +42,5 @@ int main(){
         if((day + startDay)%7==0) printf("\n");
     }
     return 0;
+
 }
